@@ -6,15 +6,20 @@ namespace Gameplay {
 		StickCollectionView::StickCollectionView()
 		{
 		}
+
 		StickCollectionView::~StickCollectionView()
 		{
 		}
-		void StickCollectionView::initialize()
+		
+		void StickCollectionView::initialize(StickCollectionController* collection_controller)
 		{
+			this->collection_controller = collection_controller;
 		}
+
 		void StickCollectionView::update()
 		{
 		}
+
 		void StickCollectionView::render()
 		{
 		}

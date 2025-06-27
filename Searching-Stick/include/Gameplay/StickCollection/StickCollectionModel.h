@@ -12,7 +12,7 @@ namespace Gameplay {
 		};
 
 		class StickCollectionModel {
-		private:
+		public:
 			const float max_element_height = 820.f;
 			float elements_spacing = 25.f;
 			const float element_y_position = 1020.f;
@@ -26,7 +26,6 @@ namespace Gameplay {
 			int linear_search_delay = 120;
 			int number_of_elements = 100;
 
-		public:
 			StickCollectionModel();
 			~StickCollectionModel();
 

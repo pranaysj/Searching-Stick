@@ -1,5 +1,8 @@
 #pragma once
+#include <SFML/Graphics.hpp>
 #include <vector>
+#include <thread>
+
 
 using namespace std;
 
@@ -16,6 +19,7 @@ namespace Gameplay {
 		private:
 			StickCollectionView* collection_view;
 			StickCollectionModel* collection_model;
+
 			std::vector<Stick*> sticks;
 			SearchType search_type;
 
@@ -25,9 +29,10 @@ namespace Gameplay {
 			void updateSticksPosition();
 
 			void resetSticksColor();
-
 			void initializeSticksArray();
 			float calculateStickHeight(int array_pos);
+			
+			void destory();
 
 		public:
 			StickCollectionController();
@@ -37,6 +42,7 @@ namespace Gameplay {
 			void update();
 			void render();
 
+			void reset();
 			void searchElement(SearchType search_type);
 
 			SearchType getSearchType();

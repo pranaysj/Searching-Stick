@@ -9,14 +9,16 @@ namespace Gameplay {
 			int data;
 			UI::UIElement::RectangleShapeView* stick_view;
 
-			Stick();
+			Stick() {};
 
-			Stick(int data) {
+			Stick(int data)
+			{
 				this->data = data;
 				stick_view = new UI::UIElement::RectangleShapeView();
 			}
 
-			~Stick() {
+			~Stick()
+			{
 				delete(stick_view);
 			}
 		};

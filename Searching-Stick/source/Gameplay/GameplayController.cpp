@@ -21,6 +21,7 @@ namespace Gameplay
 	void GameplayController::initialize()
 	{
 		gameplay_view->initialize(this);
+		reset();
 	}
 
 	void GameplayController::update()
