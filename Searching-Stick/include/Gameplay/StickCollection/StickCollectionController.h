@@ -28,6 +28,10 @@ namespace Gameplay {
 			int number_of_comparisons;
 			int number_of_array_access;
 
+			int current_operation_delay;
+
+			std::thread search_thread;
+
 			void initializeSticks();
 			float calculateStickWidth();
 
@@ -40,6 +44,8 @@ namespace Gameplay {
 			void shuffleSticks();
 			void resetSearchStick();
 
+			void processSearchThreadState();
+			void joinThreads();
 			void processLinearSearch();
 
 			void resetVariables();
@@ -55,13 +61,17 @@ namespace Gameplay {
 			void render();
 
 			void reset();
+
 			void searchElement(SearchType search_type);
 
 			SearchType getSearchType();
 
-			int getNumberOfSticks();
 			int getNumberOfComparisons();
 			int getNumberOfArrayAccess();
+
+			int getNumberOfSticks();
+
+			int getDelayMilliseconds();
 		};
 	}
 }
