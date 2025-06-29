@@ -168,6 +168,8 @@ namespace Gameplay {
 
 		void StickCollectionController::update()
 		{
+			processSearchThreadState();
+
 			for (int i = 0; i < sticks.size(); i++)
 				sticks[i]->stick_view->update();
 		}
@@ -188,7 +190,6 @@ namespace Gameplay {
 				current_operation_delay = collection_model->linear_search_delay;
 				time_complexity = "O(n)";
 				search_thread = std::thread(&StickCollectionController::processLinearSearch, this);
-				//processLinearSearch();
 				break;
 			}
 		}
