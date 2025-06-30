@@ -10,8 +10,8 @@ namespace Graphics
 
 		const std::string game_window_title = "Outscal Presents - Searching Visualizer";
 
-		const int game_window_width = 1920;
-		const int game_window_height = 1080;
+		const int game_window_width = 2560;
+		const int game_window_height = 1440;
 		sf::Vector2f reference_resolution;
 		const sf::Color window_color = sf::Color(200, 200, 0, 255);
 
