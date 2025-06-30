@@ -27,8 +27,13 @@ This visualizer explores two fundamental search techniques:
 > _“An algorithm must be seen to be believed.” – Donald Knuth_
 
 ## 📸 Screenshots
-
+ 
+ <div align="center">LINEAR SEARCH</div>
+ 
 ![1](https://github.com/user-attachments/assets/e96a1940-c53c-4afe-90d5-fec6362a50a8)
+
+ <div align="center">BINARY SEARCH</div>
+
 ![2](https://github.com/user-attachments/assets/7fe7ea5a-5c3a-42ff-b459-9e2fb714c5e1)
 
 
