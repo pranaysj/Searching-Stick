@@ -2,6 +2,7 @@
 #include <SFML/Graphics.hpp>
 #include <vector>
 #include <thread>
+#include <SFML/Graphics/Color.hpp>
 
 
 using namespace std;
@@ -51,6 +52,10 @@ namespace Gameplay {
 			void processLinearSearch();
 
 			void resetVariables();
+
+			void sortElement();
+			bool compareElementsByData(const Stick* a, const Stick* b) const;
+			void processBinarySearch();
 
 			void destory();
 
